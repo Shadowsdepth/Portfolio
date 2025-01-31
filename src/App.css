@@ -5,3 +5,11 @@
   text-align: center;
 }
 
+/* In app.css */
+/* In app.css */
+body {
+  background: linear-gradient(to right, #e0e0e0, #808080);
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif; /* Clean font */
+}

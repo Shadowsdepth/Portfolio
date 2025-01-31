@@ -14,10 +14,10 @@ const NavBar = () => {
                     <Link to="/portfolio">Portfolio</Link>
                 </li>
                 <li>
-                    <Link to="/portfolio">Resume</Link>
+                    <Link to="/resume">Resume</Link>
                 </li>
                 <li>
-                    <Link to="/Temp">Portfolio</Link>
+                    <Link to="/aboutme">About Me Page</Link>
                 </li>
             </ul>
         </nav>
