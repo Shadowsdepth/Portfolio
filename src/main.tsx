@@ -5,7 +5,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 // Bringing in the pages the router will use to conditionally show the appropriate views
 import App from './App';
 import ErrorPage from './pages/ErrorPage';
-import HomePage from './pages/HomePage';
+import HomePage from './pages/AboutMePage';
 import PortfolioPage from './pages/PortfolioPage';
 import ContactPage from './pages/ContactPage';
 import AboutMePage from './pages/AboutMePage';

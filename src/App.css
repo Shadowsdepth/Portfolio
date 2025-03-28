@@ -1,15 +1,271 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-/* In app.css */
-/* In app.css */
+/* Global Styles */
 body {
   background: linear-gradient(to right, #e0e0e0, #808080);
   min-height: 100vh;
   margin: 0;
-  font-family: Arial, sans-serif; /* Clean font */
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures the content area takes up available space */
+}
+
+/* Root container */
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  flex: 1; /* Ensures the content takes up available space */
+}
+
+/* Header (NavBar) */
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  padding: 1rem 0;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #f0a500;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+  margin-top: auto; /* Pushes footer to the bottom */
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+footer a:hover {
+  color: #f0a500;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+/* Page Styles */
+h1, h2, h3 {
+  color: #333;
+}
+
+/* ResumePage */
+ul {
+  padding: 0;
+  list-style-type: none;
+  text-align: left;
+}
+
+ul li {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+/* PortfolioPage */
+.project-card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.project-card h2 {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.project-card a {
+  display: block;
+  margin: 0.5rem 0;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project-card a:hover {
+  color: #f0a500;
+}
+
+/* ContactPage */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form div {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form button {
+  background-color: #333;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+form button:hover {
+  background-color: #f0a500;
+}
+
+form span {
+  color: red;
+  font-size: 0.9rem;
+}
+
+/* AboutMePage */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.about-container img {
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.about-container h3 {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.about-container p {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Utility classes */
+.text-center {
+  text-align: center;
+}
+
+.margin-top {
+  margin-top: 2rem;
+}
+
+.margin-bottom {
+  margin-bottom: 2rem;
+}
+
+/* Proficiencies Box */
+.proficiencies-box {
+  border: 2px solid #ccc;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  margin: 1rem 0;
+  border-radius: 8px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.proficiencies-box ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.proficiencies-box ul li {
+  font-size: 1.1rem;
+  color: #333;
+  margin: 0.5rem 0;
+}
+
+/* AboutMePage Box */
+.about-container-box {
+  border: 2px solid #ccc;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  margin: 1rem 0;
+  border-radius: 8px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-container-box img {
+  border-radius: 10%;
+  margin-bottom: 1rem;
+  width: 150px;  /* Ensure the image stays round */
+  height: 150px; /* Ensure the image stays round */
+}
+
+.about-container-box h3 {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.about-container-box p {
+  font-size: 1rem;
+  color: #333;
 }
